@@ -528,7 +528,7 @@
             <a href="https://www.linkedin.com/in/emilylewispinnell/" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn profile">
               <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
-            <a href="/cdn-cgi/l/email-protection#20454d494c594c4557495350494e4e454c4c60474d41494c0e434f4d" class="footer-social-btn" aria-label="Send email">
+            <a href="mailto:emilylewispinnell@gmail.com" class="footer-social-btn" aria-label="Send email">
               <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </a>
           </div>
@@ -549,23 +549,23 @@
 
         <div class="footer-contact">
           <h4>Get in Touch</h4>
-          <a href="/cdn-cgi/l/email-protection#88ede5e1e4f1e4edffe1fbf8e1e6e6ede4e4c8efe5e9e1e4a6ebe7e5">
+          <a href="mailto:emilylewispinnell@gmail.com">
             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span class="__cf_email__" data-cfemail="d9bcb4b0b5a0b5bcaeb0aaa9b0b7b7bcb5b599beb4b8b0b5f7bab6b4">[email&#160;protected]</span>
+            emilylewispinnell@gmail.com
           </a>
-          <p class="footer-availability">Available for speaking engagements, media interviews, and board positions.</p>
+          <p class="footer-availability">Available for speaking engagements, media interviews, consulting engagements and board positions.</p>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Emily Lewis-Pinnell. All rights reserved.</p>
+        <p>&copy; Emily Lewis-Pinnell. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <!-- Filter Script -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     (function() {
       const buttons = document.querySelectorAll('.filter-btn');
       const cards = document.querySelectorAll('.tl-card');
@@ -578,4 +578,17 @@
 
           var filter = btn.getAttribute('data-filter');
 
-          card
+          cards.forEach(function(card) {
+            if (filter === 'all' || card.getAttribute('data-type') === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

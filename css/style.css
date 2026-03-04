@@ -108,18 +108,18 @@ a { color: inherit; text-decoration: none; }
 
 .bio-grid {
   display: grid; grid-template-columns: 1fr;
-  gap: 48px; align-items: center; margin-bottom: 64px;
+  gap: 48px; align-items: start; margin-bottom: 64px;
 }
-@media (min-width: 1024px) { .bio-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px) { .bio-grid { grid-template-columns: 2fr 3fr; } }
 
 .bio-image {
-  width: 100%; height: auto; border-radius: 8px;
+  width: 100%; height: 100%; object-fit: cover; border-radius: 8px;
   box-shadow: 0 4px 20px -4px hsla(224, 71%, 15%, 0.08);
 }
 .bio-image-col { order: 2; }
 .bio-text-col { order: 1; }
 @media (min-width: 1024px) {
-  .bio-image-col { order: 1; }
+  .bio-image-col { order: 1; min-height: 100%; }
   .bio-text-col { order: 2; }
 }
 
@@ -229,8 +229,8 @@ a { color: inherit; text-decoration: none; }
   padding: 4px 12px; font-size: 12px; font-weight: 600;
   text-transform: capitalize; border: none; line-height: 1.33;
 }
-.badge-article   { background: hsla(224, 71%, 15%, 0.1);  color: #0b1a41; }
-.badge-podcast   { background: hsla(217, 91%, 60%, 0.1);  color: #3c83f6; }
+.badge-article   { background: hsla(217, 91%, 60%, 0.1);  color: #3c83f6; }
+.badge-podcast   { background: hsla(0, 60%, 38%, 0.1);    color: #9b2c2c; }
 .badge-video     { background: hsla(0, 84.2%, 60.2%, 0.1); color: #ef4444; }
 .badge-webinar   { background: hsla(224, 71%, 15%, 0.1);  color: #0b1a41; }
 .badge-interview { background: hsla(280, 70%, 55%, 0.1);  color: #a73cdd; }
