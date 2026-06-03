@@ -54,6 +54,12 @@ Match the existing pattern exactly when inserting cards.
 | Interview | `badge-interview` (purple) |
 | Webinar | `badge-webinar` (grey) |
 
+## Card HTML Template
+
+Use this exact structure when inserting new thought leadership cards. 
+Precede each card with a comment: `<!-- Article: [Title] -->` (or Podcast, Speaker, etc.)
+```html
+
 ### Sitemap
 Update all `<lastmod>` dates to today (YYYY-MM-DD) whenever HTML files are modified.
 

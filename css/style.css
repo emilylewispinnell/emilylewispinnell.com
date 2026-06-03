@@ -235,6 +235,7 @@ a { color: inherit; text-decoration: none; }
 .badge-webinar   { background: hsla(224, 71%, 15%, 0.1);  color: #0b1a41; }
 .badge-interview { background: hsla(280, 70%, 55%, 0.1);  color: #a73cdd; }
 .badge-speaker   { background: hsla(142, 76%, 36%, 0.1);  color: #16a249; }
+.badge-panel     { background: hsla(38, 92%, 50%, 0.12);  color: #b45309; }
 
 /* ==========================================================================
    FILTER BAR (Insights page)
