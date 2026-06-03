@@ -53,6 +53,20 @@ Match the existing pattern exactly when inserting cards.
 | Speaker | `badge-speaker` (green) |
 | Interview | `badge-interview` (purple) |
 | Webinar | `badge-webinar` (grey) |
+| Panel | `badge-panel` (amber/gold) |
+
+#### Panel badge details
+- **Badge text:** Panel
+- **Color rule** (already live in `css/style.css`, directly after `.badge-speaker`):
+  ```css
+  .badge-panel     { background: hsla(38, 92%, 50%, 0.12);  color: #b45309; }
+  ```
+- **Use case:** Multi-contributor expert panels and roundtable discussions where Emily is one of several voices, not the sole author. Distinct from Speaker (Emily presenting solo) and Interview (one-on-one).
+- **Icon** (Users — distinct from the single-person Mic used for Speaker/Podcast):
+  ```html
+  <svg class="tl-card-type-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+  ```
+- **Filtering:** the `insights.html` filter bar includes a `data-filter="panel"` button so the type is filterable.
 
 ## Card HTML Template
 
